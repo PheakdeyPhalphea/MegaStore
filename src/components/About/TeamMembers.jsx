@@ -1,54 +1,49 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Box } from "@mui/material";
-import Person1 from "./Person1.png";
-import Person2 from "./Person2.png";
+import image1 from "./image1.jpg";
+import image2 from "./image2.jpg";
+import image3 from "./image3.jpg";
+import image4 from "./image4.jpg";
+import image5 from "./image5.jpg";
+
 import PaginationIndicator from "../common/components/PaginationIndicator";
 import i18n from "../common/components/LangConfig";
 
 const teamMembersData = [
   {
-    name: i18n.t("aboutPage.name1"),
-    role: i18n.t("aboutPage.job3"),
-    image: Person1,
+    name: i18n.t("Seang sengleaph"),
+    role: i18n.t("Flutter Developer"),
+    image: image1,
   },
   {
-    name: i18n.t("aboutPage.name2"),
-    role: i18n.t("aboutPage.job1"),
-    image: Person2,
+    name: i18n.t("PhalPhea Pheakdey"),
+    role: i18n.t("Cyber Security"),
+    image: image2,
   },
   {
-    name: i18n.t("aboutPage.name4"),
-    role: i18n.t("aboutPage.job2"),
-    image: Person1,
+    name: i18n.t("Thon Chhavalit"),
+    role: i18n.t("Devops Engineer"),
+    image: image3,
   },
   {
-    name: i18n.t("aboutPage.name3"),
-    role: i18n.t("aboutPage.job3"),
-    image: Person2,
+    name: i18n.t("Yoeurn Sonita"),
+    role: i18n.t("Cyber Security"),
+    image: image4,
   },
   {
-    name: i18n.t("aboutPage.name2"),
-    role: i18n.t("aboutPage.job1"),
-    image: Person1,
+    name: i18n.t("Vorn Saran"),
+    role: i18n.t("Backend Developer"),
+    image: image5,
   },
-  {
-    name: i18n.t("aboutPage.name1"),
-    role: i18n.t("aboutPage.job4"),
-    image: Person2,
-  },
-  {
-    name: i18n.t("aboutPage.name3"),
-    role: i18n.t("aboutPage.job2"),
-    image: Person1,
-  },
+
 ];
 
 const TeamMember = ({ name, role, image }) => {
   return (
     <Box className="flex gap-4 flex-col ">
       <Box className="bg-gray-200 rounded-xl w-full md:w-96 flex items-center justify-center">
-        <img src={image} alt="image" />
+        <img src={image} alt="image" className="w-full h-auto object-cover" />
       </Box>
       <Box className="flex md:mx-10  gap-4 items-center md:items-start flex-col ">
         <h2 className="font-bold text-3xl">{name}</h2>
@@ -103,28 +98,20 @@ const TeamMember = ({ name, role, image }) => {
   );
 };
 
-const TeamMembers = () => {
-  const [startIndex, setStartIndex] = useState(0);
-
+const Team = () => {
   return (
-    <div>
-      <div className=" md:mx-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {teamMembersData
-          .slice(startIndex, startIndex + 3)
-          .map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-      </div>
-
-      <div className="mx-8 md:mx-32 mt-8">
-        <PaginationIndicator
-          activeIndex={startIndex}
-          onClick={setStartIndex}
-          data={teamMembersData}
+    <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {teamMembersData.map((member, index) => (
+        console.log(member),
+        <TeamMember
+          key={index}
+          name={member?.name}
+          role={member?.role}
+          image={member?.image}
         />
-      </div>
-    </div>
+      ))}
+    </Box>
   );
 };
 
-export default TeamMembers;
+export default Team;

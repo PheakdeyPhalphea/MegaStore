@@ -121,9 +121,8 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               {i18n.t("footer.support")}
             </Typography>
-            <Typography gutterBottom>{i18n.t("footer.address")}</Typography>
-            <Typography variant="body2">exclusive@gmail.com</Typography>
-            <Typography variant="body2">+88015-88888-9999</Typography>
+            <Typography variant="body2">COST@gmail.com</Typography>
+            <Typography variant="body2">+855 8888 9999</Typography>
           </Grid>
 
           {/* Account */}
@@ -241,7 +240,7 @@ const Footer = () => {
             <Typography variant="body2" gutterBottom className="text-gray-500 ">
               {i18n.t("footer.save")}
             </Typography>
-            <div className="flex flex-row gap-2 my-4">
+            <div className="flex flex-row gap-2 my-5">
               <img src={QrCode} alt="Qr Code" />
               <div>
                 <Link onClick={scrollToTop} to="/">
@@ -340,7 +339,7 @@ const Footer = () => {
       {/* Copyright */}
       <hr className="w-full border-gray-800 my-4" />
       <Typography variant="body2" className=" text-center text-gray-600">
-        {i18n.t("footer.copyrights")}
+        <p>© Copyright COST 2024. All rights reserved</p>
       </Typography>
       {/* <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "right" }}

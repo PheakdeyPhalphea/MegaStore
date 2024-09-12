@@ -53,7 +53,7 @@ const Profile = () => {
             {wishlistItems.length}
           </span>
           <svg
-            className="hover:bg-red-500 rounded-full w-6 md:w-8 md:h-8"
+            className="rounded-full w-6 md:w-8 md:h-8"
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const Profile = () => {
           </span>
 
           <svg
-            className="hover:bg-red-500 rounded-full w-6 md:w-8 md:h-8"
+            className="rounded-full w-6 md:w-8 md:h-8"
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@ const Profile = () => {
             aria-expanded={open ? "true" : undefined}
           >
             <svg
-              className="hover:bg-red-500 rounded-full w-6 md:w-8 md:h-8"
+              className="rounded-full w-6 md:w-8 md:h-8"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

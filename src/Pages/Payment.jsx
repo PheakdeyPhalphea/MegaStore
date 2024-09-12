@@ -2,6 +2,8 @@ import { useState } from "react";
 import RedButton from "../components/common/components/RedButton";
 import i18n from "../components/common/components/LangConfig";
 import { Link } from "@mui/material";
+import { Button } from "flowbite-react";
+import { toast } from "react-toastify";
 // import { functions } from "../firebase";
 const Payment = () => {
   const [paymentInfo, setPaymentInfo] = useState({
@@ -85,12 +87,9 @@ const Payment = () => {
           />
         </div>
         {/* Place Order button */}
-        <Link href="/">
-          <RedButton
-            name={i18n.t("redButtons.placeOrder")}
-            // onClick={handlePayment}
-          />
-        </Link>
+        <Button className="bg-red-600 h-[40px] text-center" onClick={toast.success("Order Successful") }>
+          <p className="text-md">Place Order</p>
+        </Button>
       </form>
     </div>
   );

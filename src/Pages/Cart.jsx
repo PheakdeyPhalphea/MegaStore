@@ -69,7 +69,7 @@ const Cart = () => {
             <p className="text-xl">{i18n.t("cart.shipping")}:</p>
             <p className="text-xl">{i18n.t("cart.free")}</p>
           </div>{" "}
-          <div className="mx-10">
+          <div className="">
             <Link to="/checkout">
               <RedButton name={i18n.t("redButtons.processToCheckout")} />
             </Link>
