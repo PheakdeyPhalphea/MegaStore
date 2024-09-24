@@ -18,7 +18,7 @@ const teamMembersData = [
   },
   {
     name: i18n.t("PhalPhea Pheakdey"),
-    role: i18n.t("Cyber Security"),
+    role: i18n.t("CyberSecurity"),
     image: image2,
   },
   {
@@ -28,7 +28,7 @@ const teamMembersData = [
   },
   {
     name: i18n.t("Yoeurn Sonita"),
-    role: i18n.t("Cyber Security"),
+    role: i18n.t("CyberSecurity"),
     image: image4,
   },
   {

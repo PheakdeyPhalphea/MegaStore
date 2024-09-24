@@ -121,7 +121,7 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               {i18n.t("footer.support")}
             </Typography>
-            <Typography variant="body2">COST@gmail.com</Typography>
+            <Typography variant="body2">megastorekh@gmail.com</Typography>
             <Typography variant="body2">+855 8888 9999</Typography>
           </Grid>
 
@@ -254,7 +254,7 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="mt-4 flex items-center gap-2">
-              <Link onClick={scrollToTop} to="/" className="mr-4">
+              <Link onClick={scrollToTop} to="https://www.facebook.com/profile.php?id=61565434154389&mibextid=LQQJ4d" className="mr-4">
                 <svg
                   width="24"
                   height="24"

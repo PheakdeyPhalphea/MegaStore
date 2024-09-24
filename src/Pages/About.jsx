@@ -20,7 +20,7 @@ const About = () => {
               {i18n.t("aboutPage.story")}
             </h1>
             <p className="text-base text-center md:text-start">
-              {i18n.t("aboutPage.paragraph1")}
+            Launced in 2024, MegaStoreKh is Southeast Asia premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region.
             </p>
             <p className="text-base text-center md:text-start">
               {i18n.t("aboutPage.paragraph2")}

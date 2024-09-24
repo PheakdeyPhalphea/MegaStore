@@ -34,7 +34,7 @@ const Contact = () => {
             <div className="flex flex-col gap-4">
               <p className="text-sm">{i18n.t("contactPage.available")}</p>
               <p className="text-sm">
-                {i18n.t("contactPage.phone")}: +8801611112222
+                {i18n.t("contactPage.phone")}: +855 8888 9999
               </p>
             </div>
           </div>
@@ -66,10 +66,10 @@ const Contact = () => {
               <p className="text-sm">{i18n.t("contactPage.fillForm")}</p>
 
               <p className="text-sm">
-                {i18n.t("contactPage.emails")}: customer@exclusive.com
+                {i18n.t("contactPage.emails")}: megastorekh@gmail.com
               </p>
               <p className="text-sm">
-                {i18n.t("contactPage.emails")}: support@exclusive.com
+                {i18n.t("contactPage.emails")}: megastorekh@gmail.com
               </p>
             </div>
           </div>
